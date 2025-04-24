@@ -1,0 +1,2 @@
+# CreateGmailByNotion
+notionの情報を取得して，Gmailを自動送信する
