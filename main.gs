@@ -1,6 +1,5 @@
 const NOTION_TOKEN = "XXXXXXXXXXXXXXXXXXXXX";
 const DATABASE_ID = "XXXXXXXXXXXXXXXXXXXXX";
-
 const GmailAddress = "XXXXXXXXXXXXXXXXXXXXX";
 
 function sendNotionEventsToEmail() {
@@ -59,7 +58,7 @@ function fetchNotionEvents() {
         return false;
         }
 
-        // 今日から一カ月間の予定ではないなら除外
+        // 今日から二カ月間の予定ではないなら除外
         try {
           const startDate = new Date(page.properties["開始"].date.start);
           // Logger.log(startDate);
